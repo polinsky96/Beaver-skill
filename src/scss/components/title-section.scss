@@ -1,0 +1,10 @@
+.title-section {
+    @include font-main-light;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    @include for-mobile-devices {
+        font-size: 2rem;
+    }
+}

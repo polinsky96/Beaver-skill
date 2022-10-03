@@ -1,0 +1,29 @@
+.description {
+    padding: 7rem 0;
+    background-color: $second-color;
+
+    @include for-mobile-devices {
+        padding: 4rem 0;
+    }
+}
+
+.description__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__text-item {
+    margin: 0 0 1rem 0;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    
+    @include for-mobile-devices {
+        font-size: 1rem;
+    }
+
+    @include font-main-dark;
+}

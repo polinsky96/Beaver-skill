@@ -1,0 +1,29 @@
+.container {
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include for-mobile-devices {
+        width: map.get($container-max-widths, "for-mobile-devices");
+    }
+
+    @include for-tablet {
+        width: map.get($container-max-widths, "for-tablet");
+    }
+
+    @include for-laptop {
+        width: map.get($container-max-widths, "for-laptop");
+    }
+
+    @include for-desktop {
+        width: map.get($container-max-widths, "for-desktop");
+    }
+
+    @include for-large {
+        width: map.get($container-max-widths, "for-large");
+    }
+
+    @include for-extra-large {
+        width: map.get($container-max-widths, "for-extra-large");
+    }
+}

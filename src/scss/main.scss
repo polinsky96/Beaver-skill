@@ -1,0 +1,21 @@
+@use "sass:map";
+
+//import configuration files
+@import './variables.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+@import './media.scss';
+@import './config.scss';
+
+//import styles for section
+@import'./sections/main-headline.scss';
+@import'./sections/desription.scss';
+@import'./sections/advantages.scss';
+@import'./sections/contacts.scss';
+
+//import styles for components
+@import './components/btn-main.scss';
+@import './components/container.scss';
+@import './components/title-section.scss';
+@import './components/horizontal-scroller.scss';
+

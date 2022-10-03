@@ -1,0 +1,17 @@
+//main color palette
+$main-color: #131313;
+$second-color: #F5F5F5;
+$accent-color: #C79756;
+
+//font color palette
+$font-dark: #131313;
+$font-light: #F5F5F5;
+
+$container-max-widths: (
+    for-mobile-devices: 100%,
+    for-tablet: 540px,
+    for-laptop: 720px,
+    for-desktop: 960px,
+    for-large: 1140px,
+    for-extra-large: 1320px
+);

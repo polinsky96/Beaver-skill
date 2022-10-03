@@ -1,0 +1,29 @@
+.horizontal-scroller {
+    min-height: 100vh;
+    @include viewport-full-height;
+
+    overflow-x: hidden;
+
+    background-color: $second-color;
+}
+
+.horizontal-scroller__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.horizontal-scroller__item {
+    flex: 0 0 500px;
+    height: 75%;
+    margin-right: 100px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.horizontal-scroller__image {
+    min-width: 100%;
+    object-fit: cover;
+}
