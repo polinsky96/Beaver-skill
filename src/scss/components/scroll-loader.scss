@@ -1,0 +1,15 @@
+.indicator-scroll {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 5;
+
+    min-width: 100%;
+    height: 7px;
+}
+
+.indicator-scroll__progress {
+    min-width: 100%;
+    height: 100%;
+    background-color: $accent-color;
+}

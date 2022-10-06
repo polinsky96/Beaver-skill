@@ -3,24 +3,39 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const items = gsap.utils.toArray('.horizontal-scroller__item');
+// headline content animation
+const mainHeadlineAnimation = {
+    y: -30,
+    duration: 0.4,
+    opacity: 0,
+}
 
-const itemProperty = gsap.getProperty(items[0]);
-const itemWidth = itemProperty('clientWidth');
-const itemMarginRight = itemProperty('marginRight')
-const itemFullWidth = itemWidth + itemMarginRight;
+gsap.timeline().from('.main-headline__title', mainHeadlineAnimation)
+    .from('.main-headline__subtitle', mainHeadlineAnimation)
+    .from('.main-headline__button', mainHeadlineAnimation);
 
-const containerWidth = (itemFullWidth * items.length) - itemMarginRight;
 
-const animationScroll = {
-    x: - (containerWidth - window.innerWidth),
-    ease: "none",
+// animation other item
+
+const itemScrollAnimation = {
+    y: -30,
+    opacity: 0,
+    ease: 'none',
     scrollTrigger: {
-        trigger: ".horizontal-scroller",
-        pin: true,
-        scrub: 1,
-        end: "+=" + containerWidth,
+        trigger: ".description__wrapper",
+        start: "top bottom-=30%",
     }
 }
 
-gsap.to('.horizontal-scroller__container', animationScroll);
+function setAnimationItem(item, trigger) {
+    return gsap.from(item, {
+        ...itemScrollAnimation,
+        scrollTrigger: {
+            trigger: trigger,
+            start: "top bottom-=30%"
+        }
+    });
+}
+
+setAnimationItem('.description__text-item', '.description__wrapper');
+setAnimationItem('.advantages__item', '.advantages__layout');
