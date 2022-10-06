@@ -1,4 +1,43 @@
 .contacts {
-    background-color: $main-color;
-    height: 100vh;
+    padding: 3rem 0 5rem 0;
+
+    background-color: $main-color;    
+}
+
+.contacts__title-section {
+    margin-bottom: 2rem;
+}
+
+.contacts__phone-number {
+    margin-bottom: 2rem;
+
+    @include font-main-accent;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    & > p {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    @include for-mobile-devices {
+        font-size: 2rem;
+    }
+}
+
+.contacts__social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__link {
+    height: 60px;
+    margin-right: 4rem;
+
+    &:last-child {
+        margin: 0;
+    }
 }

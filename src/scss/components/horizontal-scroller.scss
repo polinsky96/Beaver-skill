@@ -14,7 +14,8 @@
 }
 
 .horizontal-scroller__item {
-    flex: 0 0 500px;
+    // flex: 0 0 500px;
+    flex: 0 0 clamp(300px, 100vw, 500px);
     height: 75%;
     margin-right: 100px;
 

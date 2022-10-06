@@ -47,3 +47,8 @@
     @include font-main-light;
     color: $font-dark;
 }
+
+@mixin font-main-accent {
+    @include font-main-light;
+    color: $accent-color;
+}
