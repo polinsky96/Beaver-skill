@@ -48,11 +48,10 @@
     max-width: 900px;
     margin: 0 0 5rem 0;
 
-    font-family: Montserrat;
+    @include font-main-light;
     font-size: 2rem;
-    text-align: center;
     font-weight: 200;
-    color: white;
+    text-align: center;
 
     @include for-mobile-devices {
         font-size: 1.2rem;
