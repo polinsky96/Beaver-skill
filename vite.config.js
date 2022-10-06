@@ -1,7 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import eslint from 'vite-plugin-eslint';
-import { imagetools } from 'vite-imagetools';
 
 export default defineConfig({
     root: path.resolve(__dirname, 'src'),
@@ -15,7 +14,7 @@ export default defineConfig({
                 assetFileNames: (AssetInfo) => {
                     const type = AssetInfo.name.split('.').at(-1);
 
-                    if (/(jpg|jpeg|png|svg|webp)/.test(type)) {
+                    if (/(jpg|jpeg|png|svg|webp|avif)/.test(type)) {
                         return "assets/images/[name].[ext]"
                     }
                     
@@ -37,7 +36,6 @@ export default defineConfig({
         open: true
     },
     plugins: [
-        eslint(),
-        imagetools(),
+        eslint()
     ],
 })
