@@ -2,6 +2,7 @@
     position: relative;
 
     @include viewport-full-height;
+    background: url('../../images//horizontal-scroller/img-1-bg-preload.webp');
 }
 
 .main-headline__swiper {

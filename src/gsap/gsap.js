@@ -10,10 +10,12 @@ const mainHeadlineAnimation = {
     opacity: 0,
 }
 
-gsap.timeline().from('.main-headline__title', mainHeadlineAnimation)
+window.addEventListener('load', () => {
+    console.log('upload');
+    return gsap.timeline().from('.main-headline__title', mainHeadlineAnimation)
     .from('.main-headline__subtitle', mainHeadlineAnimation)
     .from('.main-headline__button', mainHeadlineAnimation);
-
+})
 
 // animation other item
 
