@@ -15,6 +15,14 @@
     <meta property="og:image:height" content="546"/>
     <meta property="og:type" content="website"/>
     <!-- <meta property="og:url" content= ""/> -->
+    <script>
+      window.addEventListener('load', () => {
+        const mainHeadlineContent = document.querySelector('.main-headline__content-wrapper');
+        mainHeadlineContent && mainHeadlineContent.classList.remove('hidden');
+      });
+    </script>
+    <script type="module" crossorigin src="/index.381efcda.js"></script>
+    <link rel="stylesheet" href="/assets/styles/index.d234505b.css">
   </head>
   <body>
     <div class="indicator-scroll">
@@ -22,35 +30,37 @@
     </div>
     <section class="main-headline">
       <div class="main-headline__content">
-        <h1 class="main-headline__title">BEAVER SKILL</h1>
-        <p class="main-headline__subtitle">Делаем вручную добротные кожаные вещи с современным дизайном.</p>
-        <div class="main-headline__button">
-          <a href="https://vk.com/beaver_skill">
-            <button class="btn-main main-headline__btn-main">Заказать</button>
-          </a>
+        <div class="main-headline__content-wrapper hidden">
+          <h1 class="main-headline__title">BEAVER SKILL</h1>
+          <p class="main-headline__subtitle">Делаем вручную добротные кожаные вещи с современным дизайном.</p>
+          <div class="main-headline__button">
+            <a href="https://vk.com/beaver_skill">
+              <button class="btn-main main-headline__btn-main">Заказать</button>
+            </a>
+          </div>
         </div>
       </div>
       <div class="swiper main-headline__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source srcset="./images/swiper/img-1_mobile.webp" media="(max-width: 519px)">
-              <source srcset="./images/swiper/img-1_tablet.webp" media="(max-width: 719px)">
-              <img srcset="./images/swiper/img-1_default.jpeg" alt="leather-prod">
+              <source srcset="/assets/images/img-1_mobile.webp " media="(max-width: 519px)">
+              <source srcset="/assets/images/img-1_tablet.webp " media="(max-width: 719px)">
+              <img srcset="/assets/images/img-1_default.jpeg " alt="leather-prod">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="./images/swiper/img-2_mobile.avif" type="image/avif" media="(max-width: 519px)">
-              <source srcset="./images/swiper/img-2_tablet.webp" media="(max-width: 719px)">
-              <img srcset="./images/swiper/img-2_default.jpeg" alt="leather-prod">
+              <source srcset="/assets/images/img-2_mobile.avif " type="image/avif" media="(max-width: 519px)">
+              <source srcset="/assets/images/img-2_tablet.webp " media="(max-width: 719px)">
+              <img srcset="/assets/images/img-2_default.jpeg " alt="leather-prod">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="./images/swiper/img-3_mobile.webp" media="(max-width: 519px)">
-              <source srcset="./images/swiper/img-3_tablet.webp" media="(max-width: 719px)">
-              <img srcset="./images/swiper/img-3_default.jpeg" alt="leather-prod">
+              <source srcset="/assets/images/img-3_mobile.webp " media="(max-width: 519px)">
+              <source srcset="/assets/images/img-3_tablet.webp " media="(max-width: 719px)">
+              <img srcset="/assets/images/img-3_default.jpeg " alt="leather-prod">
             </picture>
           </div>
         </div>
@@ -79,22 +89,22 @@
           <div class="title-section advantages__title-section">ПРЕИМУЩЕСТВА</div>
           <div class="advantages__layout">
             <div class="advantages__item">
-              <img src="./icons/advantages_1.svg" alt="item-icon" class="advantages__image">
+              <img src="/assets/images/advantages_1.svg" alt="item-icon" class="advantages__image">
               <div class="advantages__title">Ручная работа</div>
               <div class="advantages__subtitle">Все операции от раскройки до готового изделия выполнены вручную</div>
             </div>
             <div class="advantages__item">
-              <img src="./icons/advantages_2.svg" alt="item-icon" class="advantages__image">
+              <img src="/assets/images/advantages_2.svg" alt="item-icon" class="advantages__image">
               <div class="advantages__title">Приятный внешний вид и 100% кожа</div>
               <div class="advantages__subtitle">Возможность создания и подчеркивания индивидуального стиля, ведь изделия сшитые вручную уникальны</div>
             </div>
             <div class="advantages__item">
-              <img src="./icons/advantages_3.svg" alt="item-icon" class="advantages__image">
+              <img src="/assets/images/advantages_3.svg" alt="item-icon" class="advantages__image">
               <div class="advantages__title">Надежность и долговечность</div>
               <div class="advantages__subtitle">Продукция из натуральной кожи несомненно прослужит в течение длительного времени</div>
             </div>
             <div class="advantages__item">
-              <img src="./icons/advantages_4.svg" alt="item-icon" class="advantages__image">
+              <img src="/assets/images/advantages_4.svg" alt="item-icon" class="advantages__image">
               <div class="advantages__title">Высокая скорость изготовления изделий </div>
               <div class="advantages__subtitle">2-10 дней</div>
             </div>
@@ -106,44 +116,44 @@
       <div class="horizontal-scroller__container">
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_1.avif" type="image/avif" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_1.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_1.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_1.avif " type="image/avif" media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_1.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_1.jpg " alt="leather-pocket">
           </picture>
         </div>
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_2.webp" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_2.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_2.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_2.webp " media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_2.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_2.jpg " alt="leather-pocket">
           </picture>
         </div>
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_3.webp" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_3.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_3.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_3.webp " media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_3.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_3.jpg " alt="leather-pocket">
           </picture>
         </div>
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_4.webp" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_4.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_4.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_4.webp " media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_4.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_4.jpg " alt="leather-pocket">
           </picture>
         </div>
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_5.webp" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_5.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_5.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_5.webp " media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_5.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_5.jpg " alt="leather-pocket">
           </picture>
         </div>
         <div class="horizontal-scroller__item">
           <picture>
-            <source srcset="./images/horizontal-scroller/hs-photo-mobile_6.webp" media="(max-width: 519px)">
-            <source srcset="./images/horizontal-scroller/hs-photo-tablet_6.webp" media="(max-width: 719px)">
-            <img srcset="./images/horizontal-scroller/hs-photo-desktop_6.jpg" alt="leather-pocket">
+            <source srcset="/assets/images/hs-photo-mobile_6.webp " media="(max-width: 519px)">
+            <source srcset="/assets/images/hs-photo-tablet_6.webp " media="(max-width: 719px)">
+            <img srcset="/assets/images/hs-photo-desktop_6.jpg " alt="leather-pocket">
           </picture>
         </div>
       </div>
@@ -156,18 +166,18 @@
           <div class="contacts__social-links">
             <div class="contacts__link">
               <a href="https://vk.com/beaver_skill">
-                <img src="./icons/social-VK.svg" alt="VK">
+                <img src="/assets/images/social-VK.svg" alt="VK">
               </a>
             </div>
             <div class="contacts__link">
               <a href="https://www.instagram.com/beaver_skill/">
-                <img src="./icons/social-instagram.svg" alt="Instagram">
+                <img src="/assets/images/social-instagram.svg" alt="Instagram">
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script type="module" src="/main.js"></script>
+    
   </body>
 </html>
